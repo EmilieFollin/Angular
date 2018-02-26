@@ -1,0 +1,26 @@
+<p>
+  list works!
+</p>
+<div *ngIf="movies.length<= 0"> Aucun film disponible </div>
+
+
+<div *ngIf="movies.length > 1" >
+  <span> Nous avons dans notre catalogue : <strong> {{movies.length}} films </strong></span>
+
+
+<div class="movies">
+<div class="movie"  *ngFor="let movie of movies" (click)="showMovie (movie.titles)" appListActive="">
+
+  <h3>Titre :  {{ movie.titles }}</h3>
+
+  <ul>
+
+    <li>Date de sortie : {{ movie.releaseDates }}</li>
+    <li>Synopsis : {{movie.syno}}</li>
+  </ul>
+
+</div>
+</div>
+</div>
+
+
