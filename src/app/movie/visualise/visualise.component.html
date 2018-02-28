@@ -1,0 +1,14 @@
+<h2> {{movie.titles}} </h2>
+
+<ul>
+
+    <img src="{{movie.img}}">
+    <li>Date de sortie : {{ movie.releaseDates | date:"dd/MM/yy" }}</li>
+    <li>Synopsis : {{movie.syno}}</li>
+
+    <span [innerHTML]="movie.note | listNote">
+
+    </span>
+
+</ul>
+

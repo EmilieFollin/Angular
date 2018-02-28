@@ -6,15 +6,15 @@ import {Directive, ElementRef, HostListener} from '@angular/core';
 export class ListActiveDirective {
 
   constructor( private li: ElementRef) {
-    this.li.nativeElement.style.backgroundColor = 'powderblue';
+    this.li.nativeElement.style.backgroundColor = 'tomato';
   }
 
   @HostListener('mouseenter') onMouseEnter(){
-    this.setBackground('powderblue');
+    this.setBackground('dimgray');
   }
 
   @HostListener('mouseleave') onMouseLeave(){
-    this.setBackground('white');
+    this.setBackground('tomato');
   }
 
   setBackground (color) {

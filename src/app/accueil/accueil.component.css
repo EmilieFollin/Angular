@@ -1,0 +1,139 @@
+body {
+    background-image: url(https://www.universofnac.com.br/wp-content/uploads/2016/03/orange-is-the-new-black-01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #4D555D;
+    margin: 0 auto; /*resetting things */
+    font-family: sans-serif;
+    color: #fff;
+}
+
+#greyoverlay {
+    background-color: rgba(77, 85, 93, 0.95);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -999; /* makes sure it stays at back */
+}
+
+#sidebar {
+    height: 100vh;
+    width: 12vw;
+    background-color: #F56F36;
+    float: left;
+}
+
+#greybg {
+    background-color: rgba(77, 85, 93, 0.6);
+    width: 65vw;
+    height: 100vh;
+    display: inline-block;
+    float: left;
+}
+
+#logo {
+    width: 130px;
+    height: 35px;
+    display: inline-block;
+    position: absolute;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+nav {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+nav ul {
+    margin-left: 110px;
+}
+
+nav ul li {
+    display: inline-block;
+    color: #fff;
+    padding: 15px;
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.hrstyle {
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+
+.original {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 44px;
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+.bold {
+    font-weight: 100;
+}
+
+
+
+h2 {
+    font-size: 5em;
+    text-align: right;
+    padding-left: 2px;
+    padding-right: 5px;
+    padding-top: 27px;
+}
+
+.black {
+    color: #F56F36;
+    margin-top: -29px;
+
+}
+
+.smalltext {
+    text-align: right;
+    line-height: 20px;
+    padding-right: 285px;
+    margin-top: -100px;
+    font-size: 24px;
+}
+
+.orangehr {
+    border: 0;
+    height: 2px;
+    background-color: #F56F36;
+    width: 80px;
+    margin-top: 40px;
+    margin-left: 40px;
+    float: left;
+}
+
+.summary {
+    margin-left: 40px;
+    margin-top: 80px;
+    width: 280px;
+    text-align: left;
+    font-weight: 100;
+    font-size: 1em;
+    line-height: 22px;
+}
+
+.play {
+    height: 55px;
+    width: 120px;
+    float: right;
+    margin-right: 40px;
+    margin-top: -85px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid #F56F36;
+    background-color: rgba(245, 111, 54, 0.3);
+}
