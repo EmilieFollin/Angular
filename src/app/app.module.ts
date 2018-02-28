@@ -9,16 +9,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AccueilComponent } from './accueil/accueil.component';
 
 import {MovieModule } from './movie/movie.module';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AccueilComponent,
     ErrorComponent,
+
   ],
 
   imports: [
-      BrowserModule, MovieModule, AppRoutingModule, RouterModule
+      BrowserModule, MovieModule, AppRoutingModule, RouterModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

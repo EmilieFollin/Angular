@@ -1,0 +1,8 @@
+{
+  "movie": [
+    {"id" : 1, "title" : "Harry Potter", "director" : "JKRowling", "genre" :"Fantastique"},
+    {"id" : 2, "title" : "Harry Potter 2", "director" : "JKRowling", "genre" :"Fantastique"},
+    {"id" : 3, "title" : "Harry Potter 3", "director" : "JKRowling", "genre" :"Fantastique"}
+  ]
+}
+

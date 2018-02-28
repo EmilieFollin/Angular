@@ -7,17 +7,24 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AccueilComponent} from './accueil/accueil.component';
 import {VisualiseComponent} from './movie/visualise/visualise.component';
 import {ErrorComponent} from './error/error.component';
+import {RegisterComponent} from './register/register.component';
+import {FormsModule} from '@angular/forms';
+
 
 const routes: Routes = [
     {path : 'accueil', component: AccueilComponent},
-    {path : '**', component: ErrorComponent}
+   // {path : 'register', component: RegisterComponent},
+    {path : '**', component: ErrorComponent},
+
+
+
 
 ];
 
 @NgModule({
   imports: [
     CommonModule,
-      BrowserModule, RouterModule.forRoot( routes )
+      BrowserModule, RouterModule.forRoot( routes ), FormsModule
   ],
   declarations: []
 })

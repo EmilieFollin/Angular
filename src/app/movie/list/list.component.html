@@ -13,6 +13,7 @@
 
   <ul>
 
+    <li>Director : {{movie.director}}</li>
     <li>Date de sortie : {{ movie.releaseDates | date:"dd/MM/yy" }}</li>
     <li>Synopsis : {{movie.syno}}</li>
     <span [innerHTML]="movie.note | listNote">

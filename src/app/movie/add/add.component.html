@@ -1,0 +1,15 @@
+<form #movieForm="ngForm" (ngSubmit)="addMovie()">
+
+  <input type="text" [(ngModel)]="movie.title" name="title" placeholder="Titre" >
+  <input type="date" [(ngModel)]="movie.releaseDates" name="date" placeholder="Date de Sortie" >
+  <input type="text" [(ngModel)]="movie.syno" name="syno" placeholder="Synopsis" >
+
+
+  <select [(ngModel)]="movie.note" name="note">
+    <option *ngFor="let n of note" [value]="note">{{note}}</option>
+  </select>
+
+  <button type="submit">S'inscrire</button>
+
+</form>
+
