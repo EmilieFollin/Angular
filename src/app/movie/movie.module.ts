@@ -9,6 +9,10 @@ import {AccueilComponent} from '../accueil/accueil.component';
 import {Routes, RouterModule} from '@angular/router';
 
 
+import {MovieService} from './movie.service';
+
+
+
 const routes: Routes = [
     {path : 'movie', component: ListComponent},
     {path : 'movie/:id', component: VisualiseComponent},
@@ -27,6 +31,8 @@ const routes: Routes = [
       ListNotePipe,
       VisualiseComponent
 
-  ]
+  ],
+    providers: [MovieService],
 })
-export class MovieModule { }
+
+export class MovieModule {}
